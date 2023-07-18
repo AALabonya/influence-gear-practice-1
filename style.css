@@ -1,0 +1,369 @@
+/* shared common google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+/* header style */
+
+header{
+    background-color:white;
+    padding: 50px 100px;
+}
+
+nav{  
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .title-section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #726e6e;
+     font-size: 24px;
+     text-align: center;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav li{
+    color: #221e1e;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 600;
+    
+}
+
+nav li a{
+    color: #221e1e;
+    text-decoration: none;
+}
+nav img{
+   max-width: 27px;
+   max-height: 27px;
+  padding: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+.banner img{
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    padding: 30px;
+
+}
+
+.banner-title{
+    padding-top: 70px;
+    color: #3A3A3A;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    
+} 
+.banner-paragraph{
+     width: 500px;
+    margin-bottom: 10px;
+}
+.btn-primary{
+    padding-bottom:  26px;
+   padding: 10px 24px;
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 700;
+   border-radius: 41px;
+   background: #E02C6D;
+}
+
+
+
+/* logo section style */
+
+.logo-section{
+    padding-top: 200px;
+   
+}
+.logo-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    padding: 10px 40px;
+    gap: 80px;
+}
+
+
+/* popular section style */
+.popular-container h1{
+    text-align: center;
+}
+.popular-container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.all-popular-products-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:repeat(3, 320px);
+    grid-template-rows: repeat(3, 450px);
+    gap: 25px;
+
+}
+
+.popular-product-all{
+    padding: 10px;
+    border-radius: 10px;
+   border-radius: 5px;
+   background: #FFF;
+   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.product-img-container .popular-pic img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.popular-product-buy .title-2{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.popular-text-container p{
+    width: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #726e6e;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+/* end popular sewction style */
+
+/* feature-section */
+
+.feature{
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature-title{
+    padding-top: 10px;
+    color: #3A3A3A;
+    font-size:2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    
+} 
+.feature-paragraph{
+     width: 500px;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-top: 10px;
+   padding: 20px 24px;
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 700;
+   background: #E02C6D;
+}
+
+.feature-img{
+    padding: 30px;
+   max-width: 404px;
+    min-height: 270px;
+}
+
+
+
+
+
+
+
+/* last secti0n */
+
+.last-section{
+     width: 100%;
+     height: 10vh;
+    background: #0A0826;
+    text-align: center;
+    color: white;
+    padding: 50px 40px;
+}
+
+.last-section h1{
+font-size: 22px;
+font-weight: 700;
+
+}
+.last-section p{
+font-size: 12px;
+font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+/* mobile device */
+@media screen and (max-width:576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        color: #221e1e;
+        font-size: 15px;
+        margin-right: 20px;
+        font-weight: 600;    
+    }
+    .banner{ 
+        flex-direction: column-reverse;
+    }
+    .banner-container{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-paragraph{
+        width: 350px;
+    }
+
+    .logo-section{
+        padding-top: 50px;
+    }
+    .logo-container{
+        flex-wrap: wrap;
+        border: 1px solid #ddd;
+        padding: 10px 20px;
+        gap: 20px;
+    }
+    .all-popular-products-container{
+    justify-content: center;
+    grid-template-columns:repeat(1, 350px);
+    grid-template-rows: repeat(1, 450px);
+    gap: 25px;
+}
+.popular-product-all{
+    padding: 15px;
+
+}
+.product-img-container{
+    padding: 10px;
+
+
+
+}
+.popular-text-container{
+   
+    padding: 15px;
+}
+
+.feature{
+ flex-direction: column-reverse;
+}
+
+.feature-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ padding-bottom: 20px;
+}
+
+.feature-container img{
+    width: 299px;
+    height: 188px;
+}
+
+
+
+
+
+
+
+
+
+
+.last-section{
+   padding: 20px;
+}
+
+}
+/* tablet or medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        color: #221e1e;
+        font-size: 15px;
+        margin-right: 20px;
+        font-weight: 600;    
+    }
+    .banner{ 
+        flex-direction: column-reverse;
+    }
+    .banner-container{
+        padding-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-paragraph{
+        width: 500px;
+    }
+    .logo-section{
+        padding-top: 20px;
+    }
+    
+  .logo-container{
+            flex-wrap: wrap;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            gap: 20px;
+        }
+        
+}
+
